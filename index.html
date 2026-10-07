@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda</title>
+</head>
+<body>
+    <header>
+        <div class="box-titulo">
+            <h1 id="titulo-da-pagina">Agenda de Compromissos</h1>
+        </div>
+
+            <div id="pesquisar-filtro">
+        
+                <div class="pesquisar">
+                    <input type="text" id="pesquisar" placeholder="Pesquisar">
+                    <div id="filtro">
+                        <!-- Filtros de Pesquisa por categoria (por exemplo: aula, reunião, consulta, pessoal), prioridade e status (Agendado, Realizado, Cancelado); -->
+                        <label for="categoria">Categoria:</label>
+                        <select id="categoria" name="categoria"> 
+                            <option value="todos">Todos</option>
+                            <option value="aula">Aula</option>
+                            <option value="reuniao">Reunião</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="pessoal">Pessoal</option>
+                        </select>
+                        <label for="prioridade">Prioridade:</label>
+                        <select id="prioridade" name="prioridade">
+                            <option value="todos">Todos</option>
+                            <option value="alta">Alta</option>
+                            <option value="media">Média</option>
+                            <option value="baixa">Baixa</option>
+                        </select>
+                        <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="todos">Todos</option>
+                            <option value="agendado">Agendado</option>
+                            <option value="realizado">Realizado</option>
+                            <option value="cancelado">Cancelado</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="button-29" role="button">Pesquisar</button>
+            </div>
+
+    </header>
+    <main>
+            <section id="sec-adicionar">
+    
+                <h2>Adicionar Compromisso</h2>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao"></textarea>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option value="aula">Aula</option>
+                    <option value="reuniao">Reunião</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="pessoal">Pessoal</option>
+                </select>
+                <label for="prioridade">Prioridade:</label>
+                <select id="prioridade" name="prioridade">
+                    <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+                <button id="adicionar">Adicionar</button>
+    
+            </section>
+            <div class="coluna-filtro-lista">
+    
+                <section id="sec-lista">
+        
+                    <h2>Compromissos</h2>
+                    <ul>
+                        <li>Compromisso 1</li>
+                    </ul>
+                </section>
+            </div>
+    </main>
+    <footer>
+        <a href="https://github.com/Infrabolt">GitHub</a>
+        <p>&copy;JM Informaticas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
