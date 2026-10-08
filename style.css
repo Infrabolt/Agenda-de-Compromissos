@@ -1,3 +1,9 @@
+a {
+    text-decoration: none;
+    margin-top: 80px;
+    color: #fff;
+}
+
 /* CSS retirado de https://getcssscan.com/css-buttons-examples */
 .button-29 {
     align-items: center;
@@ -28,6 +34,7 @@
     white-space: nowrap;
     will-change: box-shadow,transform;
     font-size: 18px;
+
 }
 
 .button-29:focus {
@@ -46,7 +53,7 @@
 /* CSS retirado de https://getcssscan.com/css-buttons-examples */
 
 .pesquisar input {
-    width: 97%;
+    width: 97.5%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -55,28 +62,15 @@
 }
 
 .pesquisar {
-    width: 81.5%;
+    min-width: 60%;
+    width: 100%;
+    max-width: 130%;
+    margin-right: 20px;
 }
 
 #filtro {
     display: flex;
     justify-content: space-between;
-}
-
-.coluna-filtro-lista {
-    width: 70%;
-}
-
-#sec-adicionar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    background-color: #fff;
-    padding: 20px;
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #pesquisar-filtro {
@@ -86,43 +80,90 @@
     color: #fff; 
     padding: 20px;
     font-size: 20px;
-    width: 64%;
+    width: 80%;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#titulo-da-pagina {
-    text-align: center;
-    margin: 40px 0 0 0;
+.add-titulo, .add-descricao, .add-outros {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.box-titulo {
-    background-color: #333;
+#sec-adicionar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
     color: #fff;
-    margin-left: 10px;
+    background: #ACC0FD;
+    background: -moz-linear-gradient(top, #ACC0FD 0%, #4E9FD9 68%, #1B78A4 100%);
+    background: -webkit-linear-gradient(top, #ACC0FD 0%,#4E9FD9 68%,#1B78A4 100%);
+    background: linear-gradient(to bottom, #ACC0FD 0%,#4E9FD9 68%,#1B78A4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#302FA4', endColorstr='#1B78A4',GradientType=0 );
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
     width: 30%;
+    -webkit-box-shadow: 1px 5px 12px 4px rgba(0,28,255,0.66); 
+    box-shadow: 1px 5px 12px 4px rgba(0,28,255,0.66);
+}
+
+#sec-lista {
+    width: 70%;
+    background: #2f2f2f53;
+    width: 100%;
+    height: 100%;
+    border: #291ba4d1 solid 1px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header {
+    font-size: clamp(0.5rem, 2vw, 1rem);
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    text-align: center;
+    background: #479FAE;
+    background: -moz-linear-gradient(top, #479FAE 0%, #ACC0FD 68%, #ACC0FD 100%);
+    background: -webkit-linear-gradient(top, #479FAE 0%,#ACC0FD 68%,#ACC0FD 100%);
+    background: linear-gradient(to bottom, #479FAE 0%,#ACC0FD 68%,#ACC0FD 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ACC0FD', endColorstr='#479FAE',GradientType=0 );
+    width: 100%;
+    color: #fff;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
     margin: 20px;
+    gap: 30px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    background: #ACC0FD;
+    background: -moz-linear-gradient(top, #1B78A4 0%, #1B78A4 68%, #2755A2 100%);
+    background: -webkit-linear-gradient(top, #1B78A4 0%,#1B78A4 68%,#2755A2 100%);
+    background: linear-gradient(to bottom, #1B78A4 0%,#1B78A4 68%,#2755A2 100%);
+    width: 100%;
+    color: #fff;
 }
 
 body {
+    display: flex;
     margin: 0;
     height: 100vh;
     font-family: Arial, sans-serif;
     background: #83C8CE;
-    background: -moz-linear-gradient(top, #83C8CE 0%, #1B78A4 68%, #2755A2 100%);
-    background: -webkit-linear-gradient(top, #83C8CE 0%, #1B78A4 68%, #2755A2 100%);
-    background: linear-gradient(to bottom, #83C8CE 0%, #1B78A4 68%, #2755A2 100%);
+    background: -moz-linear-gradient(top, #889CC5 0%, #83C8CE 68%, #479FAE 100%);
+    background: -webkit-linear-gradient(top, #889CC5 0%, #83C8CE 68%, #479FAE 100%);
+    background: linear-gradient(to bottom, #889CC5 0%, #83C8CE 68%, #479FAE 100%);
 }
