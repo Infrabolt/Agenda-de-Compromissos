@@ -8,6 +8,8 @@ CCO - 6º Período
 
 A Agenda de Compromissos é uma aplicação web desenvolvida para cadastrar, consultar e organizar compromissos pessoais em uma interface simples. O projeto está sendo desenvolvido com HTML5, CSS3 e JavaScript, com foco nos requisitos acadêmicos do Tema 3 — Agenda de compromissos.
 
+Houve uma Reestruturação quase completa na aparencia no meio do projeto na tentativa de deixar a pagina web mais responsiva, uma dor cabeça que demorou mais tempo do que eu imaginava. 
+
 > **Estado atual:** a estrutura da interface e o fluxo inicial de cadastro estão em desenvolvimento. As funcionalidades descritas como planejadas ainda precisam ser concluídas.
 
 ## Funcionalidades
